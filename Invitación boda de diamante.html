@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a la Boda de Diamante</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: url('C:/Users/oliva/Downloads/Invitación boda 60 años/Textura tela gris.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+            overflow-x: hidden;
+        }
+
+        h3 {color: goldenrod;
+        }
+        .overlay {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 90%;
+            margin: 50px auto;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .header h1 {
+            margin: 0;
+            color: #333;
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            transition: color 0.5s;
+        }
+        .header h1:hover {
+            color: #007acc;
+        }
+        .preamble {
+            font-size: 1.2em;
+            color: #444;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .preamble p {
+            margin: 10px 0;
+            transition: transform 0.5s, opacity 0.5s;
+        }
+        .preamble p:hover {
+            transform: scale(1.05);
+            opacity: 0.8;
+        }
+        .details {
+            margin: 30px 0;
+        }
+        .details h2 {
+            color: #007acc;
+            font-size: 1.8em;
+            text-decoration: underline;
+            transition: color 0.5s;
+        }
+        .details h2:hover {
+            color: #004466;
+        }
+        .details p {
+            margin: 10px 0;
+            color: #333;
+            font-size: 1.1em;
+        }
+        .rsvp-button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px;
+            background: #007acc;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1.2em;
+            border: 2px solid transparent;
+        }
+        .rsvp-button:hover {
+            background: #004466;
+            border-color: #004466;
+        }
+        .counter {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #004466;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 50%;
+            font-size: 14px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+            .details h2 {
+                font-size: 1.5em;
+            }
+            .details p {
+                font-size: 1em;
+            }
+            .rsvp-button {
+                padding: 12px 24px;
+                font-size: 1em;
+            }
+            .counter {
+                bottom: 10px;
+                right: 10px;
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="header">
+            <h1>Boda de Diamante</h1>
+        </div>
+        <div class="preamble">
+            <h3>Amada Muñóz y Miguel Hurtado</h3>
+            <p>Después de 60 años de un amor que ha perdurado a través de las décadas, tenemos el honor de invitarles a celebrar este hito maravilloso con nosotros.</p>
+            <p>Desde el primer momento en que nuestros caminos se cruzaron, hemos compartido innumerables recuerdos, risas, y momentos que han solidificado nuestro amor, un amor que hoy brilla como un diamante. "Creo en ti", una canción que ha sido testigo de nuestros mejores momentos, nos acompaña en este día tan especial.</p>
+            <p>Esperamos con ansias que puedan acompañarnos en esta celebración de amor eterno y compromiso inquebrantable.</p>
+        </div>
+        <div class="details">
+            <h2>Ceremonia</h2>
+            <p>Ubicación: <a href="https://www.google.com/maps/place/Iglesia+de+San+Sebasti%C3%A1n+Axotla/@19.3566693,-99.1747764,15z/data=!4m2!3m1!1s0x0:0xe44a254b8ef0ff06?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener noreferrer">Iglesia de San Sebastián Axotla</a></p>
+            <p>Dirección: Hidalgo 23, Axotla, Álvaro Obregón, 01030, CDMX</p>
+            <p>Horario: 12:45 HRS</p>
+        </div>
+        <div class="details">
+            <h2>Fiesta</h2>
+            <p>Ubicación: <a href="https://www.google.com/maps/place/Nahuatlacas+503,+Ajusco,+Coyoac%C3%A1n,+04300+Ciudad+de+M%C3%A9xico,+CDMX/@19.3160562,-99.16162,17z/data=!3m1!4b1!4m6!3m5!1s0x85ce0038cf3f4beb:0x14b4cb2096464ae4!8m2!3d19.3160562!4d-99.16162!16s%2Fg%2F11jskdc7_1?entry=ttu" target="_blank" rel="noopener noreferrer">Nahuatlacas 503, Ajusco, Coyoacán, 04300, CDMX</a></p>
+            <p>Horario: 15:30 HRS</p>
+        </div>
+        <div class="rsvp">
+            <a href="#" class="rsvp-button" id="confirmBtn">Confirmar Asistencia</a>
+            <a href="#" class="rsvp-button" id="declineBtn">Rechazar Asistencia</a>
+        </div>
+        <div class="counter" id="counter">Asistentes: 0</div>
+    </div>
+
+    <audio id="bgMusic" autoplay loop>
+        <source src="creo-en-ti.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+        let counter = 0;
+        let confirmed = false;
+        let declined = false;
+
+        const confirmBtn = document.getElementById('confirmBtn');
+        const declineBtn = document.getElementById('declineBtn');
+        const counterDisplay = document.getElementById('counter');
+        const bgMusic = document.getElementById('bgMusic');
+
+        // Verificar si ya se ha confirmado o rechazado usando cookies
+        function checkStatus() {
+            confirmed = getCookie('confirmed') === 'true';
+            declined = getCookie('declined') === 'true';
+
+            if (confirmed || declined) {
+                confirmBtn.style.display = 'none';
+                declineBtn.style.display = 'none';
+            }
+        }
+
+        // Obtener el valor de una cookie
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        // Establecer una cookie
+        function setCookie(name, value) {
+            document.cookie = `${name}=${value}; path=/`;
+        }
+
+        confirmBtn.addEventListener('click', () => {
+            if (!confirmed && !declined) {
+                counter++;
+                counterDisplay.innerText = `Asistentes: ${counter}`;
+                confirmBtn.style.display = 'none';
+                declineBtn.style.display = 'none';
+                alert('Gracias por confirmar tu asistencia.');
+                confirmed = true;
+                setCookie('confirmed', 'true');
+            }
+        });
+
+        declineBtn.addEventListener('click', () => {
+            if (!confirmed && !declined) {
+                declineBtn.style.display = 'none';
+                confirmBtn.style.display = 'none';
+                alert('Lamentamos que no puedas asistir.');
+                declined = true;
+                setCookie('declined', 'true');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            checkStatus();
+
+            const playMusic = () => {
+                bgMusic.play().catch(() => {
+                    alert('Por favor, haz clic en cualquier lugar de la página para iniciar la música.');
+                });
+            };
+            playMusic();
+            document.addEventListener('click', playMusic, { once: true });
+        });
+    </script>
+
+</body>
+</html>
